@@ -13,9 +13,11 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 20rem;
+    width: 24rem;/*sizing of box*/
+    height: 24rem;/*sizing of box*/
     margin-inline:auto;
-    padding-inline: .1rem;
-    padding-block:.2rem;
+    padding-inline: 1rem;
+    padding-block:2rem;
     background-image: linear-gradient(to right,#34435E,#B88E8D);
 }
 .body{
@@ -41,7 +43,10 @@
 /*selecting the decimal button*/
 .box>:nth-child(17){
     grid-column:2/4;
+    display: flex;
+    justify-content: center;
 }
+
 /*selecting the equal button*/
 .box>:nth-child(19){
     grid-column:1/-1;
@@ -57,4 +62,5 @@
 }
 h1{
     text-align: center;
+    padding: 2rem;
 }
